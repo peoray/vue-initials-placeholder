@@ -1,21 +1,39 @@
 {
   "name": "vue-initials-placeholder",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Vue component that uses parsed initials as placeholders. Can be used as a substitute for absent user profile photo",
+  "private": false,
+  "author": "Emmanuel Raymond",
+  "homepage": "https://github.com/peoray/vue-initials-placeholder#readme",
   "main": "dist/vue-initials-placeholder.ssr.js",
   "browser": "dist/vue-initials-placeholder.esm.js",
   "module": "dist/vue-initials-placeholder.esm.js",
   "unpkg": "dist/vue-initials-placeholder.min.js",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "component",
+    "vue-component",
+    "initials-placeholder"
+  ],
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peoray/vue-initials-placeholder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/peoray/vue-initials-placeholder/issues"
+  },
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
     "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
+    "prepublishOnly": "$npm_execpath build"
   },
   "dependencies": {},
   "devDependencies": {
