@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <vue-initials-placeholder value='Emmanuel Raymond'/>
+    <vue-initials-placeholder
+      value="Emmanuel Raymond"
+      size="80"
+      fontSize="32"
+    />
   </div>
 </template>
 
@@ -11,7 +15,9 @@ import VueInitialsPlaceholder from '@/vue-initials-placeholder.vue';
 export default Vue.extend({
   name: 'ServeDev',
   components: {
-    VueInitialsPlaceholder
-  }
+    VueInitialsPlaceholder,
+  },
 });
 </script>
+
+<style scoped></style>
