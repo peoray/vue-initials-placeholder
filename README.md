@@ -1,6 +1,6 @@
 # vue-initials-placeholder
 
- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![npm](https://img.shields.io/npm/v/vue-initials-placeholder)
 
 > A vue component that uses parsed initials as placeholders. Can be used as a substitute for absent user profile photo.
 
@@ -17,9 +17,17 @@ npm i --save vue-initials-placeholder
 
 ## Usage
 
+#### See [Demo](https://codesandbox.io/s/vue-initials-placeholder-t9bqk)
+
 ```js
+<template>
+  <div>
+    <VueInitialsPlaceholder value="Emmanuel Raymond"/>
+  </div>
+</template>
+
 <script>
-import VueInitialsPlaceholder from 'vue-initials-placeholder.vue'
+import VueInitialsPlaceholder from 'vue-initials-placeholder'
 
 export default {
   components: {
@@ -27,12 +35,6 @@ export default {
   }
 }
 </script>
-
-<template>
-  <div>
-    <VueInitialsPlaceholder value="Emmanuel Raymond"/>
-  </div>
-</template>
 ```
 ### Props
 
